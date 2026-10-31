@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5d6d8">
+  <title>For Nikiii Maa ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><span class="heart heart-one">♥</span><span class="heart heart-two">♥</span><span class="sparkle sparkle-one">✦</span><span class="sparkle sparkle-two">✧</span><span class="butterfly">🦋</span><span class="petal petal-one">❧</span><span class="petal petal-two">❧</span></div>
+  <audio id="backgroundMusic" preload="metadata" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <button class="music-control" id="musicToggle" type="button" aria-pressed="false" aria-describedby="musicStatus"><span class="music-icon">♫</span><span id="musicLabel">Play a little music</span></button>
+  <span class="music-status" id="musicStatus" role="status" aria-live="polite"></span>
+  <div class="progress" aria-live="polite"><span id="progressText">1 of 6</span><span class="progress-dots" id="progressDots"></span></div>
+
+  <main class="storybook" id="storybook">
+    <section class="page page-invitation active" data-page="1" aria-hidden="false">
+      <div class="invitation-card paper">
+        <p class="eyebrow">a tiny promise · before the surprise</p>
+        <div class="mini-envelope" aria-hidden="true"><div class="mini-letter">♡</div><div class="mini-flap"></div></div>
+        <h1>Heyyy <span>Nikiii Maa!</span> 💗</h1>
+        <p class="lead">I have something for you...<br>But first, you have to promise me you'll smile!</p>
+        <button class="primary-button next-button" type="button" data-next>Click Here, Birthday Girl! 💌</button>
+        <p class="tiny-note">a little story made just for you</p>
+      </div>
+    </section>
+
+    <section class="page page-pickup" data-page="2" aria-hidden="true">
+      <div class="page-heading"><p class="eyebrow">surprise 02 · just because</p><h2>Okay, I have<br><em>three things</em> to say...</h2></div>
+      <div class="pickup-card paper" id="pickupCard"><span class="pickup-number" id="pickupNumber">01 / 03</span><p id="pickupText">Are you a notification? Because you make my ordinary days special! 😂</p><div class="pickup-sparkles">✦ ♡ ✧</div></div>
+      <div class="button-row"><button class="secondary-button back-button" type="button" data-back>← back</button><button class="primary-button" id="pickupNext" type="button">Okay okay, show me the next surprise →</button></div>
+    </section>
+
+    <section class="page page-story" data-page="3" aria-hidden="true">
+      <div class="page-heading"><p class="eyebrow">surprise 03 · our little beginning</p><h2>From a classroom<br>to <em>something real.</em></h2></div>
+      <div class="story-card paper"><div class="story-doodle">✎　♡　☼</div><p class="typewriter" id="storyText"></p><span class="cursor" id="typeCursor">|</span></div>
+      <div class="button-row"><button class="secondary-button back-button" type="button" data-back>← back</button><button class="primary-button next-button" type="button" data-next>There's More... ✨</button></div>
+    </section>
+
+    <section class="page page-letter" data-page="4" aria-hidden="true">
+      <div class="page-heading"><p class="eyebrow">surprise 04 · something from my heart</p><h2>Someone has written<br>something they don't say <em>every day...</em></h2></div>
+      <div class="big-envelope" id="bigEnvelope" role="button" tabindex="0" aria-label="Open your personal letter"><div class="envelope-back"></div><div class="letter-page"><div class="letter-content">
+        <p>Dear Nikiii Maa,</p><p>I honestly don't know where to begin.</p><p>When I first met you in college, I never thought you would become this important to me.</p><p>I had almost lost hope in friendships, but you made me realise that there are still people who can make friendship feel genuine.</p><p>You have seen different versions of me. The happy one, the silent one, the overthinking one, the moody one and probably the most confusing version too. 😂</p><p>But you never made me feel like I was too much.</p><p>I don't think you realise how much that means to me.</p><p>We may not have some extraordinary story to tell everyone. We may not have a thousand unforgettable incidents. But I genuinely love the simple bond we share.</p><p>I don't want this friendship to become just another college memory after graduation.</p><p>I hope we continue sharing random conversations, laughing at silly things, understanding each other's silence and being there through every phase of life.</p><p>I wish you happiness that never runs out, success beyond your expectations and a life full of beautiful surprises.</p><p>And whenever life gets difficult, I hope you remember that you have someone who genuinely wishes the best for you.</p><p>Happy Birthday, Nikiii Maa.</p><p>I'm really, really glad I met you.</p><p>Love you loads! ❤️</p>
+      </div></div><div class="envelope-flap"></div><div class="envelope-front"><span>open me, Nikiii Maa ♡</span></div></div>
+      <p class="envelope-hint" id="envelopeHint">click the envelope to open your letter</p>
+      <div class="button-row letter-actions"><button class="secondary-button back-button" type="button" data-back>← back</button><button class="primary-button" id="letterNext" type="button" disabled>Continue, Birthday Girl! →</button></div>
+    </section>
+
+    <section class="page page-cake" data-page="5" aria-hidden="true">
+      <div class="page-heading"><p class="eyebrow">surprise 05 · make a wish</p><h2>Close your eyes,<br><em>make a wish!</em></h2></div>
+      <div class="cake-area"><div class="cake" id="cake" aria-label="Birthday cake with candles" role="img"><div class="flame flame-one"></div><div class="flame flame-two"></div><div class="flame flame-three"></div><div class="candle candle-one"></div><div class="candle candle-two"></div><div class="candle candle-three"></div><div class="frosting-drip">﹏﹏﹏﹏﹏</div><div class="cake-top"></div><div class="cake-body"><i>♡</i><i>✦</i><i>♡</i></div><div class="plate"></div></div></div>
+      <div class="cake-controls"><p class="cake-message" id="cakeMessage">Close your eyes, make a wish!</p><button class="mic-button" id="micButton" type="button">Blow into the mic 🎤</button><button class="secondary-button" id="tapBlow" type="button">Tap to Blow Candles</button><p class="mic-status" id="micStatus" role="status"></p></div>
+      <div class="button-row cake-next"><button class="secondary-button back-button" type="button" data-back>← back</button><button class="primary-button" id="cakeNext" type="button" disabled>One Last Surprise... ✨</button></div>
+    </section>
+
+    <section class="page page-final" data-page="6" aria-hidden="true">
+      <div class="final-stars">✦　♡　✧　♡　✦</div><h2>Some people enter our lives unexpectedly and become irreplaceable.</h2><p>I never expected an ordinary classroom to give me a friendship this special.</p><p>Thank you for being you, Nikiii Maa.</p><p>I hope this friendship stays beyond college, beyond distance and beyond time.</p><div class="final-line"></div><h3>Happy Birthday!<br>Love you loads! ♾️💗</h3><button class="primary-button" id="replayButton" type="button">Replay Our Little Story ↻</button>
+    </section>
+  </main>
+  <div class="confetti-container" id="confetti" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
